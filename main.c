@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+//    Vídeo: https://www.youtube.com/watch?v=R0y1fapso3g
+
 // Definição da estrutura do número complexo
 typedef struct {
     float real;
