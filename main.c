@@ -1,45 +1,7 @@
 #include <stdio.h>
+#include "Complexo.h"
 
 //    Vídeo: https://www.youtube.com/watch?v=R0y1fapso3g
-
-// Definição da estrutura do número complexo
-typedef struct {
-    float real;
-    float imaginario;
-} Complexo;
-
-// Operações do TAD
-
-// Atribui valores para os campos
-void atribui(Complexo *c, float real, float imaginario) {
-    c->real = real;
-    c->imaginario = imaginario;
-}
-
-// Imprime o número no formato "R + Ci"
-void imprime(Complexo c) {
-    printf("%.2f + %.2fi\n", c.real, c.imaginario);
-}
-
-// Copia o valor de um número para outro
-void copia(Complexo *destino, Complexo origem) {
-    destino->real = origem.real;
-    destino->imaginario = origem.imaginario;
-}
-
-// Soma dois números complexos
-Complexo soma(Complexo c1, Complexo c2) {
-    Complexo resultado;
-    resultado.real = c1.real + c2.real;
-    resultado.imaginario = c1.imaginario + c2.imaginario;
-    return resultado;
-}
-
-// Testa se um número é real (parte imaginária igual a zero)
-// Retorna 1 se for real, 0 caso contrário
-int ehReal(Complexo c) {
-    return c.imaginario == 0;
-}
 
 // Programa principal para testar o TAD
 int main() {
